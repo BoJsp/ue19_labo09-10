@@ -1,7 +1,7 @@
 # conding utf-8
 import requests
+# import json
 
-url = "https://www.punapi.rest/randompun"
-response = requests.get(url)
-data = response.json()
-print("La blague:", data['content'])
+response = requests.get("https://www.punapi.rest/api/pun")
+test = response.json()
+print("La blague :", test["pun"])
